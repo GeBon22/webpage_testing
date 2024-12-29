@@ -1,3 +1,5 @@
+import { ModeToggle } from "./mode-toggle";
+
 export const Header = () => {
   return (
     <nav className="sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-25">
@@ -9,6 +11,7 @@ export const Header = () => {
             <a href="#">Projects</a>
             <a href="#">Contact</a>
           </div>
+          <ModeToggle />
         </div>
       </div>
     </nav>
