@@ -37,17 +37,17 @@ function App() {
         <div className="container" ref={containerRef}>
           <div className="flex justify-center gap-4 mt-4" data-swapy-slot="1">
             <div data-swapy-item="1">
-              <CardWithForm />
+              <CardWithForm cardNumber={1}/>
             </div>
           </div>
           <div className="flex justify-center gap-4 mt-4" data-swapy-slot="2">
             <div data-swapy-item="2">
-              <CardWithForm />
+              <CardWithForm cardNumber={2}/>
             </div>
           </div>
           <div className="flex justify-center gap-4 mt-4" data-swapy-slot="3">
             <div data-swapy-item="3">
-              <CardWithForm />
+              <CardWithForm cardNumber={3}/>
             </div>
           </div>
         </div>

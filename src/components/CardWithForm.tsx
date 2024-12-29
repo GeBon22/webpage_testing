@@ -17,12 +17,16 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 
-export function CardWithForm() {
+interface CardWithFormProps {
+  cardNumber: number
+}
+
+export function CardWithForm( props: CardWithFormProps) {
   return (
     <Card className="w-[350px]">
       <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
+        <CardTitle>Card Number {props.cardNumber}</CardTitle>
+        <CardDescription>Drag the cards to match you needs</CardDescription>
       </CardHeader>
       <CardContent>
         <form>
