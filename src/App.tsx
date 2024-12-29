@@ -32,27 +32,59 @@ function App() {
 
   return (
     <div className="bg-slate-900 text-white min-h-screen">
-      <Header />
-      <section className="mt-4">
-        <div className="container" ref={containerRef}>
-          <div className="flex justify-center gap-4 mt-4" data-swapy-slot="1">
-            <div data-swapy-item="1">
-              <CardWithForm cardNumber={1}/>
-            </div>
-          </div>
-          <div className="flex justify-center gap-4 mt-4" data-swapy-slot="2">
-            <div data-swapy-item="2">
-              <CardWithForm cardNumber={2}/>
-            </div>
-          </div>
-          <div className="flex justify-center gap-4 mt-4" data-swapy-slot="3">
-            <div data-swapy-item="3">
-              <CardWithForm cardNumber={3}/>
-            </div>
+    <Header />
+    <section className="mt-4">
+      <div className="container grid grid-cols-3 gap-4" ref={containerRef}>
+        <div data-swapy-slot="1" className="flex justify-center">
+          <div data-swapy-item="1">
+            <CardWithForm cardNumber={1} />
           </div>
         </div>
-      </section>
-    </div>
+        <div data-swapy-slot="2" className="flex justify-center">
+          <div data-swapy-item="2">
+            <CardWithForm cardNumber={2} />
+          </div>
+        </div>
+        <div data-swapy-slot="3" className="flex justify-center">
+          <div data-swapy-item="3">
+            <CardWithForm cardNumber={3} />
+          </div>
+        </div>
+
+        <div data-swapy-slot="4" className="flex justify-center">
+          <div data-swapy-item="4">
+            <CardWithForm cardNumber={4} />
+          </div>
+        </div>
+        <div data-swapy-slot="5" className="flex justify-center">
+          <div data-swapy-item="5">
+            <CardWithForm cardNumber={5} />
+          </div>
+        </div>
+        <div data-swapy-slot="6" className="flex justify-center">
+          <div data-swapy-item="6">
+            <CardWithForm cardNumber={6} />
+          </div>
+        </div>
+
+        <div data-swapy-slot="7" className="flex justify-center">
+          <div data-swapy-item="7">
+            <CardWithForm cardNumber={7} />
+          </div>
+        </div>
+        <div data-swapy-slot="8" className="flex justify-center">
+          <div data-swapy-item="8">
+            <CardWithForm cardNumber={8} />
+          </div>
+        </div>
+        <div data-swapy-slot="9" className="flex justify-center">
+          <div data-swapy-item="9">
+            <CardWithForm cardNumber={9} />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   );
 }
 
