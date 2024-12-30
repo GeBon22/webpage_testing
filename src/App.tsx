@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="bg-slate-900 text-white min-h-screen">
     <Header />
-    <section className="mt-4 pb-4">
+    <section className="mt-4 pb-4 flex justify-center">
       <div className="container grid grid-cols-3 gap-4" ref={containerRef}>
         <div data-swapy-slot="1" className="flex justify-center">
           <div data-swapy-item="1">
