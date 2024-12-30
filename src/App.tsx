@@ -3,6 +3,7 @@ import { CardWithForm } from "./components/CardWithForm";
 import { Header } from "./components/Header";
 import { createSwapy, Swapy } from "swapy";
 import { DataTableDemo } from "./components/DataTable";
+import { CustomCalendar } from "./components/Calendar";
 
 function App() {
   const swapyRef = useRef<Swapy | null>(null);
@@ -43,7 +44,7 @@ function App() {
         </div>
         <div data-swapy-slot="2" className="flex justify-center">
           <div data-swapy-item="2">
-            <CardWithForm cardNumber={2} />
+            <CustomCalendar />
           </div>
         </div>
         <div data-swapy-slot="3" className="flex justify-center">
