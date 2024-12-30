@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { CardWithForm } from "./components/CardWithForm";
 import { Header } from "./components/Header";
 import { createSwapy, Swapy } from "swapy";
+import { DataTableDemo } from "./components/DataTable";
 
 function App() {
   const swapyRef = useRef<Swapy | null>(null);
@@ -33,11 +34,11 @@ function App() {
   return (
     <div className="bg-slate-900 text-white min-h-screen">
     <Header />
-    <section className="mt-4">
+    <section className="mt-4 pb-4">
       <div className="container grid grid-cols-3 gap-4" ref={containerRef}>
         <div data-swapy-slot="1" className="flex justify-center">
           <div data-swapy-item="1">
-            <CardWithForm cardNumber={1} />
+            <DataTableDemo />
           </div>
         </div>
         <div data-swapy-slot="2" className="flex justify-center">
