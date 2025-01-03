@@ -35,8 +35,8 @@ function App() {
   return (
     <div className="bg-slate-900 text-white min-h-screen">
     <Header />
-    <section className="mt-4 pb-4 flex justify-center">
-      <div className="container grid grid-cols-3 gap-4" ref={containerRef}>
+    <section className="mt-4 pb-4 flex justify-around gap-2">
+      <div className="container grid grid-cols-3 gap-2" ref={containerRef}>
         <div data-swapy-slot="1" className="flex justify-center">
           <div data-swapy-item="1">
             <DataTableDemo />
